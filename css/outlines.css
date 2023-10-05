@@ -1,0 +1,249 @@
+svg path {
+    fill: inherit;
+}
+
+body {
+    background-color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    padding: 0px;
+    margin: 0px;
+    /*    display: flex;*/
+    /*    justify-content: flex-start;*/
+    /*    flex-direction: column;*/
+    /*    align-items: flex-start;*/
+    /*    width: auto;*/
+}
+
+
+.about_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: auto;
+    margin: 0px;
+    padding: 2px 12px;
+    background-color: #050a3d;
+}
+
+.about_menu__item {
+    color: #ededed;
+    text-decoration: none;
+    padding: 1px 12px;
+    font-family: Verdana;
+    font-size: 14px;
+}
+
+.about_menu__item:hover {
+    color: #ffffff;
+}
+
+.main_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    margin: 0px;
+    padding: 0px 4px 0px 12px;
+    background-color: #ffffff;
+    border-bottom: 1px double #050a3d60;
+}
+
+.site_logo_culumn {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-start;
+    align-items: center;
+}
+
+.site_icon {
+    margin: 2px 8px 8px 0px;
+    width: 80px;
+    height: 80px;
+}
+
+.site_name {
+    margin: 4px 8px 14px 8px;
+    color: #050a3d;
+    font-family: Salsa;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.search_form_culumn {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.search_form {
+    display: flex;
+    width: 30vw;
+    height: 35px;
+    margin: 2px 2vw 2px 2px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 14px;
+    border: 2px solid #050A3D;
+}
+
+.search_input {
+    /*	width: 0em;*/
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    float: none;
+    /* display: inline-block;
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 100%;
+    min-width: 0px;*/
+    padding-left: 10px;
+    /*    padding-right: 10px;*/
+    /*    border: none;
+    box-shadow: none;*/
+    font: 12pt arial;
+}
+
+.search_button {
+    background-color: transparent;
+    border: none;
+    padding-right: 8px;
+    display: flex;
+    allign-items: center;
+    font-family: arial, sans-serif;
+    color: #050A3D;
+    cursor: pointer;
+}
+
+.search_button:hover {
+    color: red;
+    fill: black;
+}
+
+.search_svg {
+    width: 24px;
+    height: 24px;
+    fill: #050A3D;
+    fill: inherit;
+}
+
+.main_menu {
+    width: 25%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+.main_menu__item {
+    padding-right: 4px;
+    padding-left: 4px;
+    text-decoration: none;
+    font: 14px Verdana;
+    text-decoration: none;
+    color: #050A3D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    fill: #050A3D;
+    ;
+}
+
+.main_menu__item:hover {
+    color: #000000;
+    fill: #000000;
+    filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.2));
+}
+
+.main_menu__item_svg {
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    fill: inherit;
+}
+
+.main_menu__item_text {
+    font: 14px Verdana;
+    text-decoration: none;
+    color: #050A3D;
+}
+
+.insperational_data {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 1%;
+}
+
+.inspirational_poster {
+    background-color: transparent;
+    width: auto;
+    height: 70vh;
+    background-image: url("../images/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inspirational_quote {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.inspirational_quote__text {
+    text-align: center;
+    color: #F3EFFF;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.80);
+    font-family: Calibri;
+    font-size: 6vh;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.inspirational_quote__text cite {
+    color: #F3EFFF;
+    text-align: end;
+    font-family: Calibri;
+    font-size: 4vh;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.sell_art_button {
+    width: 300px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(70, 71, 92, 0.57);
+    border: 3px solid #BEC5FFdd;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 1))
+}
+
+.sell_art_button__text {
+    color: #E0E5FE;
+    text-align: center;
+    text-shadow: 0px 0px 5px #000;
+    font-family: 'Comic Neue', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    letter-spacing: 3.5px;
+}
