@@ -35,16 +35,12 @@ header {
 
 main {
     background-color: #ffffff;
-/*    background-color: #ededed;*/
+    /*    background-color: #ededed;*/
 }
 
-h6 {
+h6 {}
 
-}
-
-li{
-
-}
+li {}
 
 footer {
     font-family: Salsa;
@@ -54,6 +50,7 @@ footer {
 
 footer p {
     font-family: Luminari, fantasy;
+    font-family: Comic Sans MS, Comic Sans, cursive;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.9;
