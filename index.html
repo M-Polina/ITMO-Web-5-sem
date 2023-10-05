@@ -9,7 +9,11 @@
     <meta name="description" content="Art Universe - сайт для покупки и продажи картин, артов и скетчей. Найди картину по душе или продай свою!">
     <link href="https://fonts.cdnfonts.com/css/comic-neue" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Salsa' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
     <link href="css/outlines.css" rel="stylesheet">
+    <link href="css/inspirational_block_style.css" rel="stylesheet">
+    <link href="css/header_style.css" rel="stylesheet">
+    <link href="css/saleboard_style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -74,7 +78,7 @@
     </header>
     <main>
         <section class="inspirational_poster">
-            <div class="insperational_data">
+            <div class="inspirational_data">
                 <div class="inspirational_quote">
                     <blockquote class="inspirational_quote__text">
                         К чёрту правила...
@@ -89,9 +93,25 @@
                 </div>
             </div>
         </section>
+        <div class="saleboard_header">
+          <button class="close_filters_button">
+            Убрать фильтры —
+          </button>
+        </div>
         <div class="painting_sale_board">
             <section class="filters_board">
                 <ul>
+                    <li> Цена
+                        <ul>
+                            <li>Менее 500 руб.</li>
+                            <li>500 - 1000 руб.</li>
+                            <li>1000 - 3000 руб.</li>
+                            <li>3000 - 5000 руб.</li>
+                            <li>5000 - 10000 руб.</li>
+                            <li>10000 - 20000 руб.</li>
+                            <li>Более 20000 руб.</li>
+                        </ul>
+                    </li>
                     <li>Материал
                         <ul>
                             <li>Акрил</li>
@@ -101,6 +121,7 @@
                             <li>Пастель</li>
                             <li>Диджитал арт</li>
                             <li>Цветные карандаши</li>
+                            <li>Цветные маркеры</li>
                         </ul>
                     </li>
                     <li>Размер диагонали, см
@@ -109,43 +130,73 @@
                             <li>Средний (40-100 см)</li>
                             <li>Большой (&gt;100 см)</li>
                         </ul>
+                        <cite>HELOOOOO</cite>
                     </li>
-                    <li>Тема
+                    <li>
+                        <h6>Тема</h6>
                         <ul>
                             <li><input type="checkbox">Портрет</li>
                             <li><input type="checkbox">Пейзаж</li>
                             <li><input type="checkbox">Натюрморт</li>
+                            <li><input type="checkbox">Люди</li>
                             <li><input type="checkbox">Абстракция</li>
                             <li><input type="checkbox">Дудл</li>
                         </ul>
                     </li>
+                    <li>
+                        <h6>Ориентация</h6>
+                        <ul>
+                            <li><input type="checkbox">Горизонтальная </li>
+                            <li><input type="checkbox">Вертикальная</li>
+                            <li><input type="checkbox">Квадратная</li>
+                        </ul>
+                    </li>
                 </ul>
             </section>
-            </section class="painigs_for_sale">
-            <article class="painting_sale_card" style="border: 1.5px solid #0000FF;">
-                <i>*тут будет фото картины*</i>
-                <p><b>Название картины</b><br>
-                    <b>Автор картины</b><br>
-                    <b>Цена</b><br>
-                    <button>Добавить в избранное</button>
-                    <button>Добавить в корзину</button>
-                </p>
-            </article>
-            <article class="painting_sale_card" style="border: 1.5px solid #0000FF;">
-                <i>*тут будет фото картины*</i>
-                <p><b>Название картины</b><br>
-                    <b>Автор картины</b><br>
-                    <b>Цена</b><br>
-                    <button>Добавить в избранное</button>
-                    <button>Добавить в корзину</button>
-                </p>
-            </article>
+            <section class="painigs_for_sale">
+                <article class="painting_sale_card">
+                    <i>*тут будет фото картины*</i>
+                    <p><b>Название картины</b><br>
+                        <b>Автор картины</b><br>
+                        <b>Цена</b><br>
+                        <button>Добавить в избранное</button>
+                        <button>Добавить в корзину</button>
+                    </p>
+                </article>
+                <article class="painting_sale_card">
+                    <i>*тут будет фото картины*</i>
+                    <p><b>Название картины</b><br>
+                        <b>Автор картины</b><br>
+                        <b>Цена</b><br>
+                        <button>Добавить в избранное</button>
+                        <button>Добавить в корзину</button>
+                    </p>
+                </article>
+                <article class="painting_sale_card">
+                    <i>*тут будет фото картины*</i>
+                    <p><b>Название картины</b><br>
+                        <b>Автор картины</b><br>
+                        <b>Цена</b><br>
+                        <button>Добавить в избранное</button>
+                        <button>Добавить в корзину</button>
+                    </p>
+                </article>
+                <article class="painting_sale_card">
+                    <i>*тут будет фото картины*</i>
+                    <p><b>Название картины</b><br>
+                        <b>Автор картины</b><br>
+                        <b>Цена</b><br>
+                        <button>Добавить в избранное</button>
+                        <button>Добавить в корзину</button>
+                    </p>
+                </article>
             </section>
         </div>
     </main>
     <footer>
-        <p>Марусина Полина</p>
-        <p>GitHub: M-Polina</p>
+        <p>Марусина Полина
+            </br><b>GitHub:</b> M-Polina
+        </p>
     </footer>
 </body>
 

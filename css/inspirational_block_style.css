@@ -1,0 +1,69 @@
+.inspirational_poster {
+    background-color: transparent;
+    height: 70vh;
+    min-width: 700px;
+    min-height: 300px;
+    background-image: url("../images/planets.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-content: center;
+}
+
+.inspirational_data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inspirational_quote {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+}
+
+.inspirational_quote__text {
+    text-align: center;
+    color: #F3EFFF;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.80);
+    font-family: Calibri;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.inspirational_quote__text cite {
+    text-align: end;
+    font-size: 30px;
+    font-family: Luminari, fantasy font-size: 4vw;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.sell_art_button {
+    width: 300px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(70, 71, 92, 0.57);
+    border: 3px solid #BEC5FFdd;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 1))
+}
+
+.sell_art_button:hover{
+    background-color: rgba(70, 71, 92, 0.61);
+        filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 10))
+}
+
+.sell_art_button__text {
+    color: #E0E5FE;
+    text-align: center;
+    text-shadow: 0px 0px 5px #000;
+    font-family: 'Comic Neue', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    letter-spacing: 3.5px;
+}
