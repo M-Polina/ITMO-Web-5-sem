@@ -16,6 +16,7 @@ textarea {
 }
 
 button {
+    cursor: pointer;
     font-size: 16px;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
@@ -38,14 +39,55 @@ main {
     /*    background-color: #ededed;*/
 }
 
-h6 {}
+article>h5 {
+    margin: 4px 18px 4px 12px;
+    font-size: 20px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
 
-li {}
+article>h6 {
+    margin: 4px 18px 4px 12px;
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+li>h6 {
+    font-size: 18px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-weight: 600;
+    margin: 10px 0px 10px 0px;
+}
+
+ul {
+    margin: 4px 0px 4px 0px;
+}
+
 
 footer {
+    background-color:#050a3d;
+    color: #ffffff;
     font-family: Salsa;
-    border-top: 1px solid #00000090;
+    border-top: 1px solid #00000040;
     text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+footer h6 {
+    font-family: Luminari, fantasy;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.9;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 footer p {
@@ -56,6 +98,6 @@ footer p {
     line-height: 1.9;
     margin-bottom: 5px;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

@@ -16,6 +16,15 @@
     border-radius: 25px;
 }
 
+.close_filters_button:hover {
+    background-color: #F6F6F6;
+    color: #050a3d;
+}
+
+.filters_blok h6 {
+    cursor: pointer;
+}
+
 .painting_sale_board {
     margin: 0px 10px 0px 10px;
     padding: 10px 0px 10px 0px;
@@ -36,13 +45,67 @@
 .painigs_for_sale {
     min-width: 700px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.painting_sale_card {
-    width: 230px;
+.painting_sale_card__item {
+    width: 400px;
+    height: auto;
     justify-self: center;
     border: 1px solid rgba(0, 0, 0, .01);
     margin: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.picture_photo {
+    width: 400px;
+}
+
+.painting_sale_card__item__interaction {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.price {
+    margin-left: 12px;
+    font-size: 40px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-weight: 300;
+}
+
+.sell_board_interaction__item {
+    margin: 0px 18px 0px 0px;
+}
+
+.filters_blok {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.filters_blok_choice__item {
+    color: rgba(0, 0, 0, 1);
+    margin: 5px 0px 5px 10px;
+    border: none;
+    background-color: inherit;
+    font-size: 18px;
+    font-family: Georgia, Serif;
+    font-weight: 100;
+}
+
+.filters_blok_choice {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-self: flex-start;
 }
