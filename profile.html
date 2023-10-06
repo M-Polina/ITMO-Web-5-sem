@@ -14,6 +14,7 @@
     <link href="css/inspirational_block_style.css" rel="stylesheet">
     <link href="css/header_style.css" rel="stylesheet">
     <link href="css/saleboard_style.css" rel="stylesheet">
+    <link href="css/profile_style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -79,7 +80,37 @@
         </div>
     </header>
     <main>
-        
+        <div class="profile_page">>
+            <div class="profile_photo">
+                <img class="profile_photo__img" src="images/profile_ava.png">
+                </img>
+                <h2 class="profile_photo__text">Полина
+                </h2>
+            </div>
+            <section class="profile_filling">
+                <div class="profile_sections">
+                    <a class="profile_sections__item active" href="profile.html">Профиль</a>
+                    <a class="profile_sections__item" href="profile.html">Мои картины</a>
+                    <a class="profile_sections__item" href="profile.html">Избранное</a>
+                    <a class="profile_sections__item" href="profile.html">Корзина</a>
+                </div>
+                <div class="profile_info">
+                    <div class="client_data">
+                        <h5>Ваше имя:</h5>
+                        <textarea id="name" rows="1">Полина</textarea>
+                    </div>
+                    <div class="client_data">
+                        <h5>E-mail:</h5>
+                        <p id="email">email.example@gmail.com</p>
+                    </div>
+                    <div class="client_data">
+                        <h5>Контактная информация:</h5>
+                        <textarea class="text_to_change" id="contacts" cols="50" rows="6">Контактная информация...</textarea>
+                    </div>
+                    <input class="profile_button" type="button" value="Сохранить изменения">
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <h6>Марусина Полина</h6>

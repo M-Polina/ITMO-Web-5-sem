@@ -66,6 +66,8 @@
 }
 
 .search_form_culumn {
+/*        position: absolute;*/
+/*    left:calc(50% - 30vw/2);*/
     display: flex;
     justify-self: center;
     align-items: center;
@@ -119,13 +121,13 @@
 }
 
 .main_menu {
-    width: 25%;
+/*    width: 20S%;*/
 
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;
     align-items: flex-end;
     text-decoration: none;
-    justify-content: space-around;
+    justify-content: space-around;*/
 }
 
 .main_menu__item {

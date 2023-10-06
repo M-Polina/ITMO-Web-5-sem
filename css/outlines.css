@@ -15,6 +15,20 @@ textarea {
     font-family: Verdana, cursive;
 }
 
+h2{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 35px;
+    color: #050a3d;
+}
+
+h5{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 20px;
+    color: #050a3d;
+    margin: 10px 0px;
+ 
+}
+
 button {
     cursor: pointer;
     font-size: 16px;
@@ -23,7 +37,7 @@ button {
 
 a {
     cursor: pointer;
-    text-decoration: none
+    text-decoration: none;
 }
 
 
@@ -79,6 +93,7 @@ footer {
 }
 
 footer h6 {
+    color: #ffffff;
     font-family: Luminari, fantasy;
     font-family: Comic Sans MS, Comic Sans, cursive;
     font-weight: 500;
@@ -91,6 +106,7 @@ footer h6 {
 }
 
 footer p {
+    color: #ffffff;
     font-family: Luminari, fantasy;
     font-family: Comic Sans MS, Comic Sans, cursive;
     font-weight: 500;
