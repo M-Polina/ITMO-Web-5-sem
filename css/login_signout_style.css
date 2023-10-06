@@ -1,0 +1,72 @@
+.login_header__separator {
+    background-color: #050a3d;
+    height: 20px;
+}
+
+.login {
+    margin: 20px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.login_foarm {
+    background-color: #F5F5F5;
+    padding: 10px 10px 20px 10px;
+    width: 400px;
+    border: 4px solid #050a3d;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.login_foarm input {
+    width: 70%;
+    margin: 10px 0px;
+    border: 4px solid #050a3d;
+    border-radius: 25px;
+    padding: 4px 10px 4px 10px;
+}
+
+.forgot_password {
+    display: inline;
+    text-align: left;
+    height: 20px;
+}
+
+.login_foarm_buttons {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.registration_button {
+    border: none;
+    background-color: inherit;
+    color: #050a3d;
+    font-size: 18px
+}
+
+
+.active_registration_button {
+    font-size: 17px;
+    color: white;
+    background-color: #050a3d;
+    border: 4px solid #050a3d;
+    padding: 2px 10px 2px 10px;
+    border-radius: 25px;
+    border-color: #050a3d;
+}
+
+.login_foarm h2{
+	color: #050a3d;
+    font-family: 'Comic Neue', sans-serif;
+    font-size: 35px;
+	margin: 5px 5px 15px 5px;
+}
