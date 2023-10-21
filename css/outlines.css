@@ -1,14 +1,3 @@
-@font-face { 
-    font-family: "ComicSansMSBold";
-    src: url("../fonts/ComicSansMSBold/ComicSansMSBold.eot");
-    src: url("../fonts/ComicSansMSBold/ComicSansMSBold.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/ComicSansMSBold/ComicSansMSBold.woff") format("woff"),
-    url("../fonts/ComicSansMSBold/ComicSansMSBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 700;
-}
-
-
 svg path {
     fill: inherit;
 }
@@ -27,13 +16,13 @@ textarea {
 }
 
 h2{
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: "Bradley Hand", cursive;
     font-size: 35px;
     color: #050a3d;
 }
 
 h5{
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: "Bradley Hand", cursive;
     font-size: 20px;
     color: #050a3d;
     margin: 10px 0px;
@@ -43,7 +32,7 @@ h5{
 button {
     cursor: pointer;
     font-size: 16px;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: "Bradley Hand", cursive;
 }
 
 a {
@@ -67,14 +56,14 @@ main {
 article > h5 {
     margin: 4px 18px 4px 12px;
     font-size: 20px;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: "Bradley Hand", cursive;
 }
 
 article > h6 {
     margin: 4px 18px 4px 12px;
     font-size: 19px;
     color: rgba(0, 0, 0, 0.8);
-    font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    font-family: Calibri, Candara,Segoe, Segoe UI, Optima, Arial, sans-serif;
 }
 
 li {
@@ -83,7 +72,7 @@ li {
 
 li > h6 {
     font-size: 18px;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: "Bradley Hand", cursive;
     font-weight: 600;
     margin: 10px 0px 10px 0px;
 }
@@ -106,7 +95,7 @@ footer {
 footer h6 {
     color: #ffffff;
     font-family: Luminari, fantasy;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: "Bradley Hand", cursive;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.9;
@@ -119,7 +108,7 @@ footer h6 {
 footer p {
     color: #ffffff;
     font-family: Luminari, fantasy;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: "Bradley Hand", cursive;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.9;
