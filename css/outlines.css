@@ -1,3 +1,14 @@
+@font-face { 
+    font-family: "ComicSansMSBold";
+    src: url("../fonts/ComicSansMSBold/ComicSansMSBold.eot");
+    src: url("../fonts/ComicSansMSBold/ComicSansMSBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ComicSansMSBold/ComicSansMSBold.woff") format("woff"),
+    url("../fonts/ComicSansMSBold/ComicSansMSBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+
 svg path {
     fill: inherit;
 }
