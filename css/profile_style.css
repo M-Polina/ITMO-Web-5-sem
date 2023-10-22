@@ -63,8 +63,10 @@
 
 .profile_info textarea,
 p {
+/*    width: 100%;*/
     font-size: 18px;
     border: none;
+    resize: none;
 }
 
 .text_to_change {

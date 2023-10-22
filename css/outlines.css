@@ -7,6 +7,10 @@ body {
     margin: 0px;
 }
 
+page {
+    min-width: 700px;
+}
+
 p,
 cite,
 input,
@@ -83,6 +87,7 @@ ul {
 
 
 footer {
+    min-width: 700px;
     background-color: #050a3d;
     color: #ffffff;
     font-family: Salsa;

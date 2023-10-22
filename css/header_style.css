@@ -1,5 +1,6 @@
 .about_menu {
-    min-width: 676px;
+    box-sizing: border-box;
+    min-width: 700px;
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -21,6 +22,7 @@
 }
 
 .main_header {
+    box-sizing: border-box;
     min-width: 700px;
     display: flex;
     flex-direction: row;
@@ -33,7 +35,6 @@
 }
 
 .site_logo_culumn {
-    width: 30%;
     display: flex;
     flex-direction: row;
     justify-self: flex-start;
@@ -66,15 +67,16 @@
 }
 
 .search_form_culumn {
-/*        position: absolute;*/
-/*    left:calc(50% - 30vw/2);*/
+    width: 30vw;
+    position: absolute;
+    left:calc(50% - 30vw/2);
     display: flex;
     justify-self: center;
     align-items: center;
 }
 
 .search_form {
-    width: 30vw;
+    width: 100%;
     height: 40px;
     margin: 2px 2px 2px 2px;
     display: flex;
@@ -133,6 +135,7 @@
 .main_menu__item {
     padding-right: 4px;
     padding-left: 4px;
+    margin-left: 1vw;
     text-decoration: none;
     font: 14px Verdana;
     text-decoration: none;
@@ -142,7 +145,12 @@
     align-items: center;
     justify-content: flex-end;
     fill: #050A3D;
-    ;
+}
+
+@media (max-width: 1110px){
+    .main_menu__item{
+        margin-left: 0px;
+    }
 }
 
 .main_menu__item:hover {
