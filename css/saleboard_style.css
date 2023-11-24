@@ -39,6 +39,7 @@
 }
 
 .filters_board {
+    display: none;
     position: relative;
     min-width: 250px;
     max-width: 250px;
@@ -46,9 +47,10 @@
 }
 
 .painigs_for_sale {
-    width: calc(100% - 250px);
+/*    width: calc(100% - 250px);*/
     padding: 0px 1px;
     margin-left: 5px;
+     padding-left: 5%;
     display: flex;
     justify-content: flex-start;
     flex-flow: row wrap;
@@ -59,7 +61,7 @@
 
 .painting_sale_card__item {
     position: relative;
-    width: 30%;
+    width: 23%;
     max-height: fit-content;
 /*    height: max-content;*/
     justify-self: center;
@@ -73,6 +75,13 @@
     align-items: flex-start;
     border: 1px solid rgba(0, 0, 0, 0.05);
 }
+
+@media (max-width: 1190px) {
+    .painting_sale_card__item {
+        width: 30%;
+    }
+}
+
 
 @media (max-width: 976px) {
     .painting_sale_card__item {

@@ -29,12 +29,13 @@
     justify-content: space-between;
     align-items: center;
     margin: 0px;
-    padding: 0px 4px 0px 12px;
+    padding: 0px 12px;
     background-color: #ffffff;
     border-bottom: 1px double #050a3d60;
 }
 
 .site_logo_culumn {
+    margin-right: 6px;
     display: flex;
     flex-direction: row;
     justify-self: flex-start;
@@ -50,14 +51,14 @@
 }
 
 .site_icon {
-    margin: 2px 8px 8px 0px;
+    margin: 2px 8px 2px 0px;
     width: 80px;
     height: 80px;
 }
 
 .site_name {
     white-space: nowrap;
-    margin: 4px 8px 14px 8px;
+    margin: 4px 8px 8px 8px;
     color: #050a3d;
     font-family: Salsa;
     font-size: 40px;
@@ -66,18 +67,42 @@
     line-height: 100%;
 }
 
+@media (max-width: 930px) {
+    .site_name {
+        font-size: 35px;
+    }
+    .site_icon {
+    margin: 2px 6px 2px 0px;
+    width: 70px;
+    height: 70px;
+}
+}
+
+
 .search_form_culumn {
-    width: 30vw;
-    position: absolute;
-    left:calc(50% - 30vw/2);
+    width: 100%;
+/*    position: absolute;*/
+/*    left:calc(50% - 30vw/2);*/
     display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+/*    display: none;*/
+}
+
+.search_form_row {
+    width: 100%;
+    min-width: 700px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
     justify-self: center;
     align-items: center;
 }
 
 .search_form {
-    width: 100%;
-    height: 40px;
+    width: 90%;
+    height: 44px;
     margin: 2px 2px 2px 2px;
     display: flex;
     justify-content: space-between;
@@ -85,7 +110,7 @@
     flex-direction: row;
     border-radius: 14px;
     align-self: stretch;
-    border: 2px solid #050A3D;
+    border: 3px solid rgba(5, 10, 61, 1);
 }
 
 .search_input {
@@ -99,11 +124,20 @@
     padding-left: 10px;
 }
 
+input::placeholder {
+/*    font-size: calc(0.4vw + 14px);*/
+    font-size: 18px;
+    color: rgba(0, 0, 10, 0.8);
+}
+
+
+
+
 .search_button {
     background-color: transparent;
     border: none;
     padding-right: 8px;
-    padding-left: 0px;
+    padding-left: 8px;
     display: flex;
     allign-items: center;
     font-family: arial, sans-serif;
@@ -133,8 +167,7 @@
 }
 
 .main_menu__item {
-    padding-right: 4px;
-    padding-left: 4px;
+    padding: 4px 4px 4px 4px;
     margin-left: 1vw;
     text-decoration: none;
     font: 14px Verdana;
@@ -145,6 +178,7 @@
     align-items: center;
     justify-content: flex-end;
     fill: #050A3D;
+    border-radius: 6px;
 }
 
 @media (max-width: 1110px){
@@ -154,18 +188,55 @@
 }
 
 .main_menu__item:hover {
-    filter: drop-shadow(0px 2px 2px rgba(0, 0, 2, 0.2));
+/*    filter: drop-shadow(0px 2px 2px rgba(0, 0, 2, 0.1));*/
+    background-color: rgba(0,0,100,0.1);
 }
 
 .main_menu__item_svg {
     text-decoration: none;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     fill: inherit;
 }
 
+
 .main_menu__item_text {
-    font: 14px Verdana;
+    padding: 0px 2px;
+    font: 16px Verdana;
     text-decoration: none;
     color: #050A3D;
+}
+
+@media (max-width: 1070px){
+    .main_menu__item_svg{
+        width: 38px;
+        height: 38px;
+    }
+    .main_menu__item_text{
+        font: 15px Verdana;
+/*        display: none;*/
+    }
+    .search_form {
+        height: 40px;
+    }
+    .search_input {
+        font-size: 17px;
+    }
+    .search_input::placeholder {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 930px){
+    .main_menu__item_svg{
+        width: 35px;
+        height: 35px;
+    }
+    .main_menu__item_text{
+        font: 14px Verdana;
+/*        display: none;*/
+    }
+    .search_form {
+        height: 40px;
+}
 }
