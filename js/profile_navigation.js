@@ -16,4 +16,5 @@ function openProfile(event, content_id) {
     event.currentTarget.className += " active";
 }
 
-document.getElementById('my_books').style.display = "block";
+console.log(document.location);
+document.getElementById('profile_info').style.display = "block";

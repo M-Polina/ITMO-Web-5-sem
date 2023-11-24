@@ -197,14 +197,6 @@ input::placeholder {
 }
 
 @media screen and (max-width: 1070px){
-    .main_menu__item_svg{
-        width: 38px;
-        height: 38px;
-    }
-    .main_menu__item_text{
-        font: 15px Verdana;
-/*        display: none;*/
-    }
     .search_form {
         height: 40px;
     }
@@ -214,14 +206,14 @@ input::placeholder {
     .search_input::placeholder {
         font-size: 17px;
     }
-    .main_menu__item_svg{
+/*    .main_menu__item_svg{
         width: 35px;
         height: 35px;
     }
     .main_menu__item_text{
         font: 14px Verdana;
 /*        display: none;*/
-    }
+    }*/
     .site_name {
         font-size: 35px;
     }
