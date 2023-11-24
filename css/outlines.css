@@ -1,3 +1,8 @@
+/*html {
+    height: 100%;
+}*/
+
+
 svg path {
     fill: inherit;
 }
@@ -31,6 +36,16 @@ h5{
     color: #050a3d;
     margin: 10px 0px;
  
+}
+
+@media screen and (max-width: 1070px){
+    h2{
+        font-size: 30px;
+    }
+    h5{
+        font-size: 18px;
+     
+    }
 }
 
 button {
