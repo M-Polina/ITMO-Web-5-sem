@@ -18,10 +18,12 @@ function openProfile(event, content_id) {
 
 // console.log(document.location);
 // console.log(currentTarget.hash);
-// document.getElementById('profile_info').style.display = "block";
+document.getElementById('profile_info').style.display = "block";
 buttons = document.getElementsByClassName("profile_sections_menu__button");
 var active_button = document.querySelector('a[href="'+document.location.hash+'"]', 'class="profile_sections_menu__button"');
-active_button.click();
+if (active_button != null) {
+    active_button.click();
+}
 
 function openProfileFromMenu(event, active_button_hash, content_id) {
     // console.log(document.location);
