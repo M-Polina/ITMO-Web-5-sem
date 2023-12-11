@@ -39,11 +39,21 @@
 }
 
 .filters_board {
-    display: none;
-    position: relative;
+/*    display: none;*/
+    position: absolute;
+    z-index: 1500;
     min-width: 250px;
     max-width: 250px;
+    margin-left: 0px;
     margin-right: 10px;
+    margin-top: 1px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    background-color: #F5F5F5;
+    border-right: 2px solid rgba(1,1,1,0.2);
+/*    border-top: 2px solid #050a3d;*/
+/*    filter: drop-shadow(10px 0px 10px #4444dd);*/
 }
 
 .painigs_for_sale {
@@ -173,11 +183,15 @@
     border-top: 1px solid rgba(0, 0, 0, 0.15);
     padding: 5px 10px 5px 10px;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
     color: rgba(0, 0, 0, 0.8);
+/*    color:white;*/
 }
 
 .filters_blok_choice__item {
     color: rgba(0, 0, 0, 1);
+/*    color:white;*/
     margin: 5px 0px 5px 10px;
     border: none;
     background-color: inherit;
@@ -187,6 +201,7 @@
 }
 
 .filters_blok_choice {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-self: flex-start;

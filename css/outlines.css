@@ -97,6 +97,7 @@ li > h6 {
 }
 
 ul {
+    list-style-type: none;
     margin: 4px 0px 4px 0px;
 }
 
