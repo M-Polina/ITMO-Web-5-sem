@@ -1,0 +1,139 @@
+/*#add_art_form{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    background-color: red;
+}
+*/
+
+.add_art_card {
+    background-color: #F5F5F5;
+    padding: 20px 3%;
+    border-radius: 20px;
+}
+
+.profile_block_name{
+/*    padding-left: 20px;*/
+}
+
+.add_art_card__info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.add_art_card_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.picture_info__text{
+    text-align: center;
+}
+
+.add_art_card_info input {
+    color: #050a3d;
+    padding: 2px 4px;
+    border-radius: 4px;
+    border: 2px solid #050a3d;
+}
+
+
+#add_art_button {
+    background-color: inherit;
+    font-size: 17px;
+    padding: 3px 6px;
+    color: #050a3d;
+    border: 2px solid #050a3d80;
+    border-radius: 6px;
+    margin: 3% 0px 0px 0px;
+}
+
+#add_art_button:hover {
+    color: white;
+    background-color: #050a3d;
+}
+
+.my_arts_cards__item {
+    max-height: fit-content;
+    justify-self: center;
+    border: 1px solid rgba(0, 0, 0, .01);
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.picture_photo {}
+
+.picture_info {
+    display: grid;
+    grid-template:
+        "a"3fr "b"1fr;
+
+}
+
+.picture_info__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture_info__text h5 {
+    margin: 10px 18px;
+    font-size: 40px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.picture_info__text h6 {
+    margin: 10px 18px;
+    font-size: 30px;
+    color: #050a3d;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+
+.picture_info__price {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 30px;
+    bottom: 40px;
+    font-size: 40px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: #050a3d;
+    font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+    .picture_info__text h5 {
+        font-size: 30px;
+    }
+
+    .picture_info__text h6 {
+        font-size: 25px;
+    }
+
+    .picture_info__price {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 800px) {
+    .picture_info__text h5 {
+        font-size: 25px;
+    }
+
+    .picture_info__text h6 {
+        font-size: 20px;
+    }
+
+    .picture_info__price {
+        bottom: 60px;
+        font-size: 30px;
+        padding-right: 20px;
+    }
+}

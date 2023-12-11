@@ -15,6 +15,7 @@
     <link href="css/header_style.css" rel="stylesheet">
     <link href="css/saleboard_style.css" rel="stylesheet">
     <link href="css/profile_style.css" rel="stylesheet">
+    <link href="css/add_art_style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -33,8 +34,8 @@
                 </a>
             </div>
             <div class="search_form_culumn">
-                <form class="search_form">
-                    <input class="search_input" placeholder="Поиск по категориям">
+                <form class="search_form" id="search_form">
+                    <input class="search_input" id="search_input" placeholder="Поиск по категориям">
                     <button class="search_button">
                         <svg class="search_svg" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <path opacity="0.92" d="M16.2501 2.5C23.8441 2.5 30.0003 8.65641 30.0003 16.2507C30.0003 19.3717 28.9606 22.2498 27.2086 24.5576L36.9477 34.3083C37.6795 35.041 37.6788 36.2282 36.9462 36.96C36.2135 37.6918 35.0263 37.6911 34.2945 36.9585L24.5566 27.2097C22.249 28.9617 19.371 30.0015 16.2501 30.0015C8.65615 30.0015 2.5 23.845 2.5 16.2507C2.5 8.65641 8.65615 2.5 16.2501 2.5ZM16.2501 6.25C10.7273 6.25 6.25 10.7274 6.25 16.2507C6.25 21.774 10.7273 26.2515 16.2501 26.2515C21.773 26.2515 26.2503 21.774 26.2503 16.2507C26.2503 10.7274 21.773 6.25 16.2501 6.25Z" fill="#050a3d" />
@@ -50,7 +51,7 @@
                         Корзина
                     </span>
                 </a>
-                <a class="main_menu__item" onclick="openProfileFromMenu(event, '#favorites', 'profile_favorites')"  href="profile.html#favorites">
+                <a class="main_menu__item" onclick="openProfileFromMenu(event, '#favorites', 'profile_favorites')" href="profile.html#favorites">
                     <svg class="main_menu__item_svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
                         <path d="M34.2516 7.8125C41.2233 7.8125 46.875 13.4642 46.875 20.4359C46.875 27.3574 44.1128 30.814 32.75 39.6518L29.3168 42.3221C26.7777 44.2969 23.2223 44.2969 20.6832 42.3221L17.25 39.6518C5.88719 30.814 3.125 27.3574 3.125 20.4359C3.125 13.4642 8.77667 7.8125 15.7484 7.8125C19.222 7.8125 22.3231 9.31932 25 12.2C27.6769 9.31932 30.778 7.8125 34.2516 7.8125ZM15.7484 12.5C11.3655 12.5 7.8125 16.053 7.8125 20.4359C7.8125 25.4062 9.85394 27.9609 20.1279 35.9517L23.5611 38.622C24.4074 39.2802 25.5926 39.2802 26.4389 38.622L29.8721 35.9517C40.1461 27.9609 42.1875 25.4062 42.1875 20.4359C42.1875 16.053 38.6345 12.5 34.2516 12.5C31.6002 12.5 29.1926 14.0077 26.9277 17.2828L26.2851 18.212C25.7943 18.9217 24.821 19.0992 24.1113 18.6084C23.9563 18.5012 23.822 18.3669 23.7149 18.212L23.0723 17.2828C20.8074 14.0077 18.3998 12.5 15.7484 12.5Z" />
                     </svg>
@@ -107,7 +108,7 @@
                 <div class="profile_block" id="profile_info" style="display: block;">
                     <div class="client_data">
                         <h5>Ваше имя:</h5>
-                        <textarea id="name" rows="1">Полина</textarea>
+                        <textarea id="name" autocomplete="on" rows="1">Полина</textarea>
                     </div>
                     <div class="client_data">
                         <h5>E-mail:</h5>
@@ -120,19 +121,52 @@
                     <input class="profile_button" type="button" value="Сохранить изменения">
                 </div>
                 <div class="profile_block" id="profile_arts">
-                    <div class="client_data">
-                        <h5>МОИ АРТЫ</h5>
+                    <h5 class="profile_block_name">МОИ АРТЫ</h5>
+                    <form id="add_art_form">
+                        <div class="add_art_card">
+                            <div class="add_art_card__photo">
+                            </div>
+                            <div class="add_art_card__info">
+                                <label for="art_name">
+                                    <div class="add_art_card_info">
+                                        <h5>Название картины: </h5>
+                                        <input type="text" id="art_name">
+                                    </div>
+                                </label>
+                                <label for="author_name">
+                                    <div class="add_art_card_info">
+                                        <h5>Имя автора: </h5>
+                                        <input type="text" id="author_name">
+                                    </div>
+                                </label>
+                                <label for="art_price">
+                                    <div class="add_art_card_info">
+                                        <h5>Цена в рублях (₽): </h5>
+                                        <input type="text" id="art_price">
+                                    </div>
+                                </label>
+                            </div>
+                            <input id="add_art_button" type="button" value="Добавить арт">
+                        </div>
+                    </form>
+                    <div id="my_arts_cards" class="none">
+                        <!-- <div class='my_arts_cards__item'>
+                            <img class="picture_photo" src="images/photo1.jpeg">
+                            <div class="picture_info">
+                                <div class="picture_info__text">
+                                    <h5>Цветы</h5>
+                                    <h6>Автор неизвестен</h6>
+                                </div>
+                                <div class="picture_info__price" сontent="6000">6000 ₽</div>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="profile_block" id="profile_favorites">
-                    <div class="client_data">
-                        <h5>ИЗБРАННОЕ</h5>
-                    </div>
+                    <h5>ИЗБРАННОЕ</h5>
                 </div>
                 <div class="profile_block" id="profile_bascket">
-                    <div class="client_data">
-                        <h5>КОРЗИНА</h5>
-                </div>
+                    <h5>КОРЗИНА</h5>
             </section>
         </div>
     </main>
@@ -140,7 +174,9 @@
         <h6>Марусина Полина</h6>
         <p><b>GitHub:</b> M-Polina
         </p>
+        <script src="js/add_art.js"></script>
     </footer>
 </body>
 <script src="js/profile_navigation.js"></script>
+
 </html>

@@ -72,16 +72,17 @@ main {
     /*    background-color: #ededed;*/
 }
 
-article > h5 {
+article h5 {
     margin: 4px 18px 4px 12px;
     font-size: 20px;
     font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
-article > h6 {
+article h6 {
     margin: 4px 18px 4px 12px;
     font-size: 19px;
-    color: rgba(0, 0, 0, 0.8);
+/*    color: rgba(0, 0, 0, 0.8);*/
+    color: #050a3d;
     font-family: Calibri, Candara,Segoe, Segoe UI, Optima, Arial, sans-serif;
 }
 
@@ -139,4 +140,12 @@ footer p {
 
 .page_load_time{
     margin: 10px;
+}
+
+.none{
+    display: none;
+}
+
+.not_none{
+    display: block;
 }
