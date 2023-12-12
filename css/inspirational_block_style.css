@@ -1,8 +1,11 @@
-.inspirational_poster {}
+.inspirational_poster {
+    height: 70vh;
+    min-width: 700px;
+    min-height: 400px;
+}
 
 .inspirational_poster__item {
     width: 100%;
-
     background-color: transparent;
     height: 70vh;
     min-width: 700px;
@@ -57,7 +60,7 @@
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 1))
 }
 
-.sign_up_button{
+.sign_up_button {
     width: 400px;
 }
 
