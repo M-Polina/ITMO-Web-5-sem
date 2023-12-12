@@ -17,6 +17,10 @@
     <link href="css/inspirational_block_style.css" rel="stylesheet">
     <link href="css/header_style.css" rel="stylesheet">
     <link href="css/saleboard_style.css" rel="stylesheet">
+    <!-- Подключаем стили сторонней библиотеки -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Подключаем скрипт сторонней библиотеки -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -35,7 +39,7 @@
                 </a>
             </div>
             <div class="search_form_culumn">
-                <form class="search_form">
+                <form class="search_form" id="search_form">
                     <input class="search_input" placeholder="Поиск по категориям">
                     <button class="search_button">
                         <svg class="search_svg" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -91,22 +95,87 @@
         </div> -->
     </header>
     <main>
-        <section class="inspirational_poster">
-            <div class="inspirational_data">
-                <div class="inspirational_quote">
-                    <blockquote class="inspirational_quote__text">
-                        К чёрту правила...
-                        <br>Рисуй то, что тебе <em>нравится</em>
-                        <br><cite>Джим Уоррен</cite>
-                    </blockquote>
+        <!-- Используем слайдер из библиотеки -->
+        <!-- wrapAround отвечает за бесконечную прокрутку -->
+        <section class="carousel inspirational_poster" data-flickity='{ "wrapAround": true, "autoPlay": 3000 }'>
+            <div class="carousel-cell inspirational_poster__item" style="background-image: url('images/planets.jpg');">
+                <div class=" inspirational_data">
+                    <div class="inspirational_quote">
+                        <blockquote class="inspirational_quote__text">
+                            К чёрту правила...
+                            <br>Рисуй то, что тебе <em>нравится</em>
+                            <br><cite>Джим Уоррен</cite>
+                        </blockquote>
+                    </div>
+                    <div class="sell_art_button">
+                        <p class="sell_art_button__text">
+                            Продать арт
+                        </p>
+                    </div>
                 </div>
-                <div class="sell_art_button">
-                    <p class="sell_art_button__text">
-                        Продать арт
-                    </p>
+            </div>
+            <div class="carousel-cell inspirational_poster__item" style="background-image: url('images/mountains.jpg');">
+                <div class="inspirational_data">
+                    <div class="inspirational_quote">
+                        <blockquote class="inspirational_quote__text">
+                            Не обязательно сворачивать горы, чтобы нарисовать <em>шедевр</em>!
+                        </blockquote>
+                    </div>
+                    <div class="sell_art_button purple_button">
+                        <p class="sell_art_button__text">
+                            Продать арт
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell inspirational_poster__item" style="background-image: url('images/roud.jpg!d');">
+                <div class="inspirational_data">
+                    <div class="inspirational_quote">
+                        <blockquote class="inspirational_quote__text">
+                            Стань творцом <em>своей</em> судьбы!
+                        </blockquote>
+                    </div>
+                    <div class="sell_art_button purple_button sign_up_button">
+                        <p class="sell_art_button__text">
+                            Зарегистрироваться
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell inspirational_poster__item" style="background-image: url('images/flowers.jpg');">
+                <div class="inspirational_data">
+                    <div class="inspirational_quote">
+                        <blockquote class="inspirational_quote__text">
+                            Никогда <em>не поздно</em> начинать творить!
+                        </blockquote>
+                    </div>
+                    <div class="sell_art_button sign_up_button">
+                        <p class="sell_art_button__text">
+                            Зарегистрироваться
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- Используем слайдер из библиотеки -->
+        <!-- wrapAround отвечает за бесконечную прокрутку -->
+        <!-- <div class="main-carousel" data-flickity='{ "wrapAround": true }'>
+            <div class="comment-panel">
+                <p class="comment-author-name">Довольный Юзер 1</p>
+                <p class="comment-text">Хорошая мойка, остался доволен!11!! Всё качественно, без вопросов!!</p>
+                <p class="service-rating">10/10</p>
+            </div>
+            <div class="comment-panel">
+                <p class="comment-author-name">Довольный Юзер 2</p>
+                <p class="comment-text">Хорошая мойка, остался доволен!11!! Всё качественно, без вопросов!!</p>
+                <p class="service-rating">10/10</p>
+            </div>
+            <div class="comment-panel">
+                <p class="comment-author-name">Довольный Юзер 3</p>
+                <p class="comment-text">Хорошая мойка, остался доволен!11!! Всё качественно, без вопросов!!</p>
+                <p class="service-rating">10/10</p>
+            </div>
+        </div> -->
         <div class="saleboard_header">
             <button class="close_filters_button">
                 Убрать фильтры —
