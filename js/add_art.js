@@ -5,8 +5,11 @@ function showMyArts() {
 
     if (localStorage.length !== 0) {
         document.getElementById("my_arts_cards").className="not_none";
+        console.log("start");
+
         for (let i = 0; i < localStorage.length; i++) {
-            let id = localStorage.key(i);
+            let id = (i + 1).toString();
+            console.log(id);
             let info = JSON.parse(localStorage.getItem(id));
             row += "<div class=\"my_arts_cards__item\">";
             row += "<img class=\"picture_photo\" src=\"images/photo1.jpeg\">";
